@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Connect - Support & Volunteer Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+        <link rel="stylesheet" href="index.css">
+
+    
+</head>
+
+<body>
+    <div class="grain-overlay"></div>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 8L20 32M8 20L32 20" stroke="currentColor" stroke-width="3"
+                            stroke-linecap="round" />
+                        <circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                </div>
+                <span class="logo-text">HealthCare Connect</span>
+            </div>
+            <nav class="nav">
+                <a href="#volunteer">Volunteer</a>
+                <a href="#support">Get Support</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Empowering Communities<br />
+                    <span class="gradient-text">Through Healthcare</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Join our mission to provide accessible healthcare support to underserved communities.
+                    Register as a volunteer or connect with our support services.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">2,500+</div>
+                        <div class="stat-label">Volunteers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15K+</div>
+                        <div class="stat-label">People Helped</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">AI Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <section class="form-section" id="volunteer">
+                    <div class="section-header">
+                        <div class="section-badge">Volunteer Registration</div>
+                        <h2 class="section-title">Make a Difference</h2>
+                        <p class="section-description">
+                            Join our network of healthcare volunteers and help us reach more communities in need.
+                        </p>
+                    </div>
+
+                    <form id="volunteerForm" class="form">
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" class="form-input" required
+                                placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required
+                                    placeholder="your.email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" required
+                                    placeholder="+91 XXXXX XXXXX">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="skills" class="form-label">Healthcare Skills/Experience *</label>
+                            <select id="skills" name="skills" class="form-select" required>
+                                <option value="">Select your primary skill</option>
+                                <option value="nursing">Nursing</option>
+                                <option value="doctor">Medical Doctor</option>
+                                <option value="pharmacy">Pharmacy</option>
+                                <option value="counseling">Mental Health Counseling</option>
+                                <option value="first-aid">First Aid & Emergency</option>
+                                <option value="physiotherapy">Physiotherapy</option>
+                                <option value="nutrition">Nutrition & Dietetics</option>
+                                <option value="admin">Administrative Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="availability" class="form-label">Availability *</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="availability" value="weekdays">
+                                    <span>Weekdays</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="availability" value="weekends">
+                                    <span>Weekends</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="availability" value="evenings">
+                                    <span>Evenings</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="availability" value="flexible">
+                                    <span>Flexible</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Tell us about yourself</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="4"
+                                placeholder="Share your motivation, experience, or any questions..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <span>Submit Application</span>
+                            <svg viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 3L9 4L15 10L9 16L10 17L17 10L10 3Z" />
+                            </svg>
+                        </button>
+                    </form>
+                </section>
+
+                <aside class="sidebar">
+                    <div class="ai-card">
+                        <div class="ai-card-icon">
+                            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="28" stroke="currentColor" stroke-width="2" />
+                                <path
+                                    d="M20 25C20 25 25 20 30 20C35 20 40 25 40 25M20 35C20 35 25 30 30 30C35 30 40 35 40 35"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <circle cx="23" cy="25" r="2" fill="currentColor" />
+                                <circle cx="37" cy="25" r="2" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <h3>AI Healthcare Assistant</h3>
+                        <p>Get instant answers to common healthcare questions, volunteer FAQs, and support information.
+                        </p>
+                        <ul class="feature-list">
+                            <li>✓ 24/7 Availability</li>
+                            <li>✓ Multilingual Support</li>
+                            <li>✓ Instant Responses</li>
+                            <li>✓ Resource Guidance</li>
+                        </ul>
+                        <button class="btn btn-secondary" id="openChatbot">Start Conversation</button>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Need Immediate Help?</h4>
+                        <p>For medical emergencies, please call:</p>
+                        <a href="tel:102" class="emergency-number">102</a>
+                        <p class="info-note">Our AI assistant can guide you to appropriate resources and services.</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <div class="chatbot-header-left">
+                <div class="chatbot-avatar">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="18" fill="currentColor" opacity="0.1" />
+                        <path d="M14 16C14 16 17 13 20 13C23 13 26 16 26 16M14 23C14 23 17 20 20 20C23 20 26 23 26 23"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        <circle cx="16" cy="16" r="1.5" fill="currentColor" />
+                        <circle cx="24" cy="16" r="1.5" fill="currentColor" />
+                    </svg>
+                </div>
+                <div>
+                    <div class="chatbot-title">Healthcare Assistant</div>
+                    <div class="chatbot-status">
+                        <span class="status-dot"></span>
+                        Online
+                    </div>
+                </div>
+            </div>
+            <button class="chatbot-close" id="closeChatbot">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="message bot-message">
+                <div class="message-avatar">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="10" opacity="0.2" />
+                        <path d="M8 10C8 10 10 8 12 8C14 8 16 10 16 10M8 14C8 14 10 12 12 12C14 12 16 14 16 14" />
+                    </svg>
+                </div>
+                <div class="message-content">
+                    <p>Hello! I'm your AI Healthcare Assistant. I can help you with:</p>
+                    <ul>
+                        <li>Volunteer program information</li>
+                        <li>Healthcare resources and services</li>
+                        <li>General health guidance</li>
+                        <li>NGO support programs</li>
+                    </ul>
+                    <p>How can I assist you today?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="quick-replies" id="quickReplies">
+            <button class="quick-reply-btn" data-query="How can I volunteer?">How can I volunteer?</button>
+            <button class="quick-reply-btn" data-query="What services do you provide?">What services do you
+                provide?</button>
+            <button class="quick-reply-btn" data-query="How do I get healthcare support?">Get healthcare
+                support</button>
+        </div>
+
+        <div class="chatbot-input-container">
+            <div class="chatbot-input-wrapper">
+                <input type="text" id="chatbotInput" class="chatbot-input" placeholder="Type your message..."
+                    autocomplete="off">
+                <button class="send-btn" id="sendBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <button class="floating-chat-btn" id="floatingChatBtn">
+        <svg class="chat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+        </svg>
+        <span class="notification-badge">AI</span>
+    </button>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>HealthCare Connect</h4>
+                    <p>Bridging healthcare gaps through community support and technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#volunteer">Volunteer</a>
+                    <a href="#support">Get Support</a>
+                    <a href="#about">About Us</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: support@healthcareconnect.org</p>
+                    <p>Emergency: 102</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HealthCare Connect NGO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+<script src="index.js"></script>
+</html>
